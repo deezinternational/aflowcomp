@@ -84,3 +84,11 @@ if uploaded_new and uploaded_old:
     output_download = output_download.drop(columns=["N_formula", "O_formula"])
     st.download_button(
         "Download Modified Table",
+        data=output_download.to_csv(index=False),
+        file_name="output_with_formulas.csv",
+        mime="text/csv"
+    )
+
+    st.caption("All operations above disregard rows below 'FOR COA and MEDIA REFERENCE ONLY' if you pre-trim your uploads.")
+else:
+    st.info("Please upload both new and old product CSV files to begin.
