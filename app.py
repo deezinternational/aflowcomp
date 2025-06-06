@@ -91,4 +91,4 @@ if uploaded_new and uploaded_old:
 
     st.caption("All operations above disregard rows below 'FOR COA and MEDIA REFERENCE ONLY' if you pre-trim your uploads.")
 else:
-    st.info("Please upload both new and old product CSV files to begin.
+    st.info("Please upload both new and old product CSV files to begin.")
